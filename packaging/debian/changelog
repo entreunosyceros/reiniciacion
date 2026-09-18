@@ -1,3 +1,10 @@
+reiniciacion (1.0.1) unstable; urgency=medium
+
+  * Corrige el icono en la barra/dock de Ubuntu asociando WM_CLASS con el .desktop.
+  * Instala iconos hicolor en varios tamaños y actualiza la caché al instalar.
+
+ -- Reiniciación <reiniciacion@localhost>  Fri, 18 Sep 2026 13:50:00 +0200
+
 reiniciacion (1.0.0) unstable; urgency=medium
 
   * Empaquetado inicial como .deb para instalación en el sistema.

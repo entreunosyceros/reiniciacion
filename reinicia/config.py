@@ -14,6 +14,9 @@ from pathlib import Path
 # ---------------------------------------------------------------------------
 
 APP_NAME = "Reiniciación"
+# Clase X11/Wayland (sin tilde): debe coincidir con StartupWMClass del .desktop
+# para que Ubuntu muestre el icono en el dock/barra.
+WM_CLASS = "Reiniciacion"
 
 # Carpeta raíz del proyecto (un nivel por encima de este paquete).
 APP_DIR = Path(__file__).resolve().parent.parent

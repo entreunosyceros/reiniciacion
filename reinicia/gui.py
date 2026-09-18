@@ -32,6 +32,7 @@ from .config import (
     SURFACE_2,
     TEXT,
     WARNING,
+    WM_CLASS,
     local_config,
     save_config,
 )
@@ -54,7 +55,8 @@ class App(tk.Tk):
 
     def __init__(self) -> None:
         """Crea la ventana, carga preferencias y arranca el indicador de internet."""
-        super().__init__()
+        # className fija la WM_CLASS que GNOME/Ubuntu usa para asociar el .desktop.
+        super().__init__(className=WM_CLASS)
         self.title(APP_NAME)
         self.configure(bg=BG)
         self.minsize(500, 800)
@@ -98,11 +100,16 @@ class App(tk.Tk):
 
     def _set_window_icon(self) -> None:
         """Asigna el icono de la ventana/barra de tareas."""
-        icon = self._load_photo(64)
-        if icon is None:
+        # Varios tamaños ayudan a gestores de ventanas y a X11.
+        icons = []
+        for size in (16, 32, 48, 64, 128):
+            icon = self._load_photo(size)
+            if icon is not None:
+                icons.append(icon)
+        if not icons:
             return
-        self.iconphoto(True, icon)
-        self._window_icon = icon
+        self.iconphoto(True, *icons)
+        self._window_icons = icons
 
     def _build_style(self) -> None:
         """Aplica el tema oscuro a los widgets ttk."""

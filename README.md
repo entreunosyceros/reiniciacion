@@ -13,17 +13,18 @@ El paquete `.deb` declara esas dependencias y `apt` las instala si faltan.
 
 ## Instalación (.deb)
 
-Genera el paquete e instálalo en el sistema:
+Para generar el paquete hace falta `python3-pil` (solo al construir, no al usar la app):
 
 ```bash
+sudo apt install python3-pil
 ./build-deb.sh
-sudo apt install ./dist/reiniciacion_1.0.0_all.deb
+sudo apt install ./dist/reiniciacion_1.0.1_all.deb
 ```
 
 También vale:
 
 ```bash
-sudo dpkg -i ./dist/reiniciacion_1.0.0_all.deb
+sudo dpkg -i ./dist/reiniciacion_1.0.1_all.deb
 ```
 
 Tras instalarlo:
