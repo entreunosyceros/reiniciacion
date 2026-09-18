@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Genera el paquete Debian reiniciacion_*.deb en dist/
+# Genera el paquete Debian reiniciacion_*.deb en el directorio dist/
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")" && pwd)"
