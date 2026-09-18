@@ -1,5 +1,9 @@
 # Reiniciación
 
+<p align="center">
+<img width="604" height="575" alt="logo" src="https://github.com/user-attachments/assets/c55cb377-1399-4f75-95af-d304c3c4881e" />
+</p>
+
 Aplicación de escritorio para **reiniciar** tu router o **restaurarlo a valores de fábrica** sin abrir el navegador.
 
 ## Requisitos
@@ -28,6 +32,9 @@ sudo dpkg -i ./dist/reiniciacion_1.0.1_all.deb
 ```
 
 Tras instalarlo:
+<p align="center">
+<img width="470" height="234" alt="lanzador-reiniciacion" src="https://github.com/user-attachments/assets/e21e84ed-f93c-4704-9bf3-28729a5a50e6" />
+</p>
 
 - comando: `reiniciacion`
 - entrada en el menú de aplicaciones: **Reiniciación**
@@ -47,6 +54,10 @@ python3 reiniciacion.py
 ```
 
 ## Uso rápido
+
+<p align="center">
+<img width="589" height="988" alt="interfaz-reiniciacion" src="https://github.com/user-attachments/assets/c03a7262-521f-4070-b0a0-e16ad94f9127" />
+</p>
 
 1. Conéctate a la red de tu router.
 2. Escribe la **URL** (por ejemplo `http://192.168.1.1`).
