@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Reiniciación
+Comment=Reinicia o restaura tu router desde el escritorio
+Exec=reiniciacion
+Icon=reiniciacion
+Terminal=false
+Categories=Network;Utility;
+StartupNotify=true
+StartupWMClass=Reiniciación
+Keywords=router;reboot;reiniciar;fábrica;movistar;

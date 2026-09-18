@@ -1,0 +1,20 @@
+# Python
+reinicia/__pycache__
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Empaquetado
+build/
+dist/
+
+# Configuración local
+.config/
+*.local.json
+
+# Sistema
+desktop.ini
+
+

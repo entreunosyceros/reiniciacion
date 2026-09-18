@@ -1,0 +1,11 @@
+Package: reiniciacion
+Version: 1.0.0
+Section: net
+Priority: optional
+Architecture: all
+Depends: python3 (>= 3.10), python3-tk
+Maintainer: Reiniciación <reiniciacion@localhost>
+Description: Reinicia o restaura tu router desde el escritorio
+ Aplicación de escritorio en Python/Tkinter para reiniciar el router
+ o restaurarlo a valores de fábrica, con soporte TR-064, HTTP y
+ routers Movistar (MHS).

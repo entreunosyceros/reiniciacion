@@ -1,0 +1,6 @@
+reiniciacion (1.0.0) unstable; urgency=medium
+
+  * Empaquetado inicial como .deb para instalación en el sistema.
+  * Incluye acceso directo en el menú de aplicaciones e icono.
+
+ -- Reiniciación <reiniciacion@localhost>  Fri, 18 Sep 2026 13:30:00 +0200
